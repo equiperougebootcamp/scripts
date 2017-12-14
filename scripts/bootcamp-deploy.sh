@@ -6,10 +6,10 @@ repository_dir=$1
 profile=$2
 
 #Un tableau contenant le nom de tous les projets qui generent un jar
-projets_jars=("bootcamp.common" "bootcamp.database" "service.crud" "bootcamp.commonws" "bootcamp.rest.service.client")
+projets_jars=("commons" "db-access" "service.crud" "commonws" "rest.service.client")
 
 #Un tableau contenant le nom de tous les projets qui generent un war
-projets_wars=("categorie.service.fonctionnel" "projet.service.fonctionnel" "commentaire.service.fonctionnel" "media.service.fonctionnel" "liketable.service.fonctionnel" "note.service.fonctionnel"  "debat.service.fonctionnel"  "censure.service.fonctionnel" "sondage.service.fonctionnel" "notification.generator.services" "preference.service.fonctionnel" "programme.service.fonctionnel" "projet.service.use.case" "categorie.service.use.case")
+projets_wars=("post.service.fonctionnel" "produit.service.fonctionnel" "notification.service.fonctionnel")
 
 #On verifie si le repertoire dans lequel ont a cloner tous les projets existe
 #Et On sort du script si le repertoire n'existe

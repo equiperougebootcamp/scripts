@@ -6,7 +6,7 @@ repository_dir=$1
 branch=$2
 
 #Un tableau contenant le nom de tous les projets 
-projets=("bootcamp.common" "bootcamp.database" "service.crud" "bootcamp.commonws" "bootcamp.rest.service.client" "categorie.service.fonctionnel" "projet.service.fonctionnel" "commentaire.service.fonctionnel" "media.service.fonctionnel" "liketable.service.fonctionnel" "note.service.fonctionnel" "debat.service.fonctionnel"  "censure.service.fonctionnel" "sondage.service.fonctionnel" "notification.generator.services" "preference.service.fonctionnel" "programme.service.fonctionnel" "projet.service.use.case" "categorie.service.use.case")
+projets=("commons" "db-access" "service.crud" "commonws" "rest.service.client"  "post.service.fonctionnel" "produit.service.fonctionnel" "notification.service.fonctionnel" "scripts")
 
 
 #On verifie si le repertoire dans lequel sera cloner tous les projets existe
@@ -31,7 +31,7 @@ clone_project () {
             # $1 paramet  er is the name of the project to clone
             cd "$repository_dir"
             echo "------------------------------ clone  $projet  project----------------------------------------"
-            git clone https://github.com/rintiobootcamp/"$projet".git -b "$branch"
+            git clone https://github.com/equiperougebootcamp/"$projet".git -b "$branch"
     done
 }
 
